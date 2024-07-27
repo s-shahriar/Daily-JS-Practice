@@ -94,28 +94,16 @@ function largestFactorial(numbers){
     }
     return factiorial(max)
 }
-
 console.log(largestFactorial(numbers))
 
 
-
-// Find the largest factorial
-const largestFactorialA = numbers.reduce((largest, num) => {
-    const currentFactorial = factorial(num);
-    return currentFactorial > largest ? currentFactorial : largest;
-}, 1);
-
-console.log(largestFactorial(numbers)); // Output: 40320
-
+//Sum of digits of a number
 
 function sumOfDigits(num){
-    let ans = 0
-    while(num > 0){
-        ans
-        ans += num%10;
-        ans
-        num = Math.floor(num/10)
-        num
+    let ans = 0;
+    while(num > 0) {
+        ans += num%10
+        num = num/10;
     }
     return ans
 }
